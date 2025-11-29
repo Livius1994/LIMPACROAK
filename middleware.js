@@ -8,7 +8,7 @@ export function middleware(req) {
   ];
 
   if (bots.some((b) => ua.includes(b))) {
-    return NextResponse.rewrite(new URL("/result", req.url));
+    return NextResponse.rewrite("/result");
   }
 
   return NextResponse.next();
